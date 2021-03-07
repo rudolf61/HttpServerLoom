@@ -10,7 +10,6 @@ Requests are failing beyond this threshold. I have not investigated the cause, b
 HttpServer is very simple. I made it a little bit easier to turn it into a real server, adding a router and dividing the HttpServer into the server itself and 
 the context that is created from the server, very much like most servlet engines.
 
-I was hoping to get this server to work neatly with project Loom. I know that there are serious problems with TOMCAT where they tried to do something similar.
-Synchronizing a virtual thread seems to be an issue.
+I was hoping to get this server to work neatly with project Loom, but it seems not to be trivial.
 
-This version is far from perfect ans should be considered an alpha version.
+Please note: this is just a try-out, a play-ground. It would be nice if Oracle would make the embedded HttpServer suitable for virtual threads.
